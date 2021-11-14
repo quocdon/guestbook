@@ -3,8 +3,7 @@ package fsoft.guestbook.entity;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "guestbook_entries")
-public class GuestbookEntry {
+public class Guestbook {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,10 +12,10 @@ public class GuestbookEntry {
     @Column(name = "name")
     private String name;
 
-    public GuestbookEntry() {
+    public Guestbook() {
     }
 
-    public GuestbookEntry(long id, String name) {
+    public Guestbook(long id, String name) {
         this.id = id;
         this.name = name;
     }
